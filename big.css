@@ -1,9 +1,9 @@
 body {
   font-family: 'Helvetica';
   letter-spacing:-5px;
-  background:#000;
+  background:#aaa;
   background-size:100%;
-  color:#fff;
+  color:#FFCC00;
   margin:0;
   padding:0;
   font-weight:bold;
@@ -13,14 +13,18 @@ h1, h2, h3, p {
   margin:0;
 }
 
-em, a {
+strong, em, a {
   font-style:normal;
-  color:#8dbd0c;
+  color:#368A52;
+}
+
+strong {
+  color: #E87C19;
 }
 
 a {
-  background: #34d0e7;
-  color:#000;
+  background: #FFCC00;
+  color:#555;
   text-decoration:none;
 }
 
