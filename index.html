@@ -75,9 +75,35 @@
 <div>Go ahead and <em>open</em> the earthquakes geojson you downloaded earlier in <strong>geojson.io</strong> and <em>edit</em> some of the points.</div>
 <div>This tool does <strong>not</strong> at this time handle <em>Shapefiles</em>. How do we convert those?</div>
 <div>One way is using a browser tool called <strong>Ogre</strong>. Head to <a href="http://bit.ly/ogre-web">bit.ly/ogre-web</a> and try it out.</div>
-<div>If you don't have a shapefile handy, head to <a href="http://bit.ly/fayette-co">bit.ly/fayette-co</a> and download the zip.</div>
-<div>Once you have the geojson, <em>visualize</em> it with one of the techniques we talked about!</div>
+<div>If you don't have a shapefile handy, head to <a href="http://bit.ly/fayette-co">bit.ly/fayette-co</a> and download the zip. Then convert it with <strong>Ogre</strong>.</div>
+<div>Once you have the geojson from Ogre, <em>visualize</em> it with one of the techniques we talked about!</div>
+<div>Other techniques include using <a href="http://qgis.org">QGIS</a> or <a href="http://www.gdal.org/ogr2ogr.html">ogr2ogr</a> in the command line.</div>
 <div><em>PART FOUR:</em> How do I add GeoJSON to my <strong>Leaflet</strong> map?</div>
+<div>I'm going to show you <strong>my favorite way</strong> to do this. I have also written a <a href="http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/">blog post</a> about it. Note that it is <em>not</em> the official Leaflet-suggested method.</div>
+<div>Head to <a href="http://bit.ly/cat-news">bit.ly/cat-news</a>.</div>
+<div>This is a project called <em>CatNews</em> where you can add <strong>news about cats</strong> to a map by editing GeoJSON.</div>
+<div>(You can view it live at <a href="http://lyzidiamond.com/catnews">lyzidiamond.com /catnews</a>.)</div>
+<div>Click on <em>catnews.js</em>.</div>
+<div><img src="./images/catnews.png" /></div>
+<div><strong>Note:</strong> this project uses <a href="http://mapbox.com/mapbox.js">Mapbox.js</a>, which extends <em>Leaflet</em>. The technique will work with <a href="http://leafletjs.com">Leaflet.js</a> as well.</div>
+<div><strong>Line 2</strong> initializes the map. <strong>Lines 4-7</strong> add an image for map markers. <strong>Lines 9-15</strong> enable popups and zooming to feature on click. We are going to focus on <strong>lines 17-26</strong>.</div>
+<div>The <em>getJSON</em> method is a <a href="http://jquery.com">jQuery</a> method that makes an <strong>ajax</strong> request for the geojson.</div>
+<div>This part might get confusing -- for more background and info click <a href="http://lyzidiamond.com/posts/osgeo-august-meeting/">here</a> and <a href="http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/">here</a>.</div>
+<div><strong>getJSON</strong> takes two parameters: a <em>URL for the file</em>, and a <em>callback function</em>.</div>
+<div>The <strong>callback function</strong> specifies what should be done when the file is <em>successfully retrieved</em>.</div>
+<div>For us, this means <em>making a Leaflet geojson object</em>, <em>assigning it to a variable</em>, adding <em>options</em>, and <em>adding it to the map</em>.</div>
+<div><img src="./images/catnews-live.png" /></div>
+<div>Again, this is just <strong>my preferred method</strong> for adding GeoJSON to a Leaflet map. You may prefer the <a href="http://leafletjs.com/examples/geojson.html">the official Leaflet method</a>.</div>
+<div><em>PART FIVE:</em> Conclusion!</div>
+<div><strong>What have we learned today?</strong></div>
+<div>We learned <em>what GeoJSON is</em>.</div>
+<div>We learned <em>two ways to visualize GeoJSON in the browser</em>.</div>
+<div>We learned <em>some techniques for converting to GeoJSON</em>.</div>
+<div>We learned <em>how to add GeoJSON to a Leaflet map</em>.</div>
+<div>Pat yourself on the back! <strong>You are awesome!</strong></div>
+<div>Keep playing with this stuff. <em>Keep learning.</em> It just gets more fun.</div>
+<div>Thanks!</div>
+<div>My name is Lyzi! I am on Twitter at <a href="http://twitter.com/lyzidiamond">@lyzidiamond</a>! MaptimeOAK is on Twitter at <a href="http://twitter.com/maptimeoak">@MaptimeOAK!</a> Holler at us!</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
