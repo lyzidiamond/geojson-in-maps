@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ImpactHub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2663736343384,
+          37.81259803781441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Lake Merritt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25764036178589,
+          37.80288390570866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Oakland Museum of California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26332664489746,
+          37.79850958608104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Oakland City Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27254003286362,
+          37.805306200909484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Laney College"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.26454973220824,
+              37.79588147879354
+            ],
+            [
+              -122.26354122161864,
+              37.7977805076241
+            ],
+            [
+              -122.25963592529295,
+              37.79625450616659
+            ],
+            [
+              -122.25688934326172,
+              37.793778925645704
+            ],
+            [
+              -122.26023674011229,
+              37.79082846791655
+            ],
+            [
+              -122.26276874542236,
+              37.79279545282709
+            ],
+            [
+              -122.26182460784912,
+              37.7942197885217
+            ],
+            [
+              -122.26454973220824,
+              37.79588147879354
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
